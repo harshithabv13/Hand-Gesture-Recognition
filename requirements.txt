@@ -1,0 +1,7 @@
+flask
+werkzeug
+numpy
+opencv-python
+keras
+h5py
+pyttsx3

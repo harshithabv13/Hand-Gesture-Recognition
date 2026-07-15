@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+{% block body %}
+<div class="row">
+<div class="col-md-6">
+<h3>Upload Thermal Image for Gesture Prediction</h3>
+{% if not session.get('username') %}
+<p>Please <a href="/login">login</a> to upload images and predict.</p>
+{% else %}
+<form method="post" action="/predict" enctype="multipart/form-data">
+<div class="mb-3">
+<input class="form-control" type="file" name="image" accept="image/*" required>
+</div>
+<button class="btn btn-primary" type="submit">Upload & Predict</button>
+</form>
+{% endif %}
+</div>
+<div class="col-md-6">
+<h3>Quick Notes</h3>
+<ul>
+<li>Model input: 128x128 thermal images (grayscale).</li>
+<li>Accepted formats: PNG, JPG, JPEG, BMP.</li>
+</ul>
+</div>
+</div>
+{% endblock %}
