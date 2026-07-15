@@ -32,7 +32,7 @@ We opted for thermal/infrared data structures over traditional visual RGB inputs
 ├── uploads/          # Temporary directory for image evaluation streams
 └── requirements.txt  # Project framework dependencies
 
-🛠️ Technology Stack
+#🛠️ Technology Stack
 Backend Framework: Flask (Python)
 
 Deep Learning Engine: TensorFlow / Keras
@@ -41,7 +41,7 @@ Computer Vision Processing: OpenCV
 
 Model Architecture: MobileNet
 
-💻 Setup and Installation
+#💻 Setup and Installation
 Prerequisites
 Make sure you have Python 3.8+ installed on your computer.
 
